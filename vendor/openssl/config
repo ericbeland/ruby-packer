@@ -321,6 +321,9 @@ case "${SYSTEM}:${RELEASE}:${VERSION}:${MACHINE}" in
     MINGW64*:*:*:x86_64)
 	echo "${MACHINE}-whatever-mingw64"; exit 0;
 	;;
+    MSYS_NT*)
+	echo "${MACHINE}-whatever-msys_nt"; exit 0;
+	;;
     MINGW*)
 	echo "${MACHINE}-whatever-mingw"; exit 0;
 	;;
